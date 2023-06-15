@@ -1,0 +1,103 @@
+/* For Login and Registere Page CSS */
+.left-side-content {
+  background-image: url("../../assets//login_register_image//login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 30px 100px !important;
+}
+
+.middel-pra {
+  font-size: 26px;
+  line-height: 137%;
+  color: rgba(255, 255, 255, 0.86);
+  margin-top: 100px;
+}
+
+.bottom-image {
+  margin-top: 100px;
+}
+
+.login-right-side-content form {
+  width: 479px;
+  margin: 0px auto;
+}
+
+.register-right-side-content {
+  width: 479px;
+  margin: 0px auto;
+  padding: 50px 0px;
+}
+.from-control {
+  height: 49px;
+  border-color: rgba(0, 0, 0, 0.07);
+  border-radius: 4px !important;
+}
+
+select {
+  height: 49px;
+  border-color: rgba(0, 0, 0, 0.07);
+  border-radius: 4px !important;
+}
+
+.title {
+  color: #001a69;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.creatacc_Link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0000ff;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.creatacc_Link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0000ff;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.form_label {
+  color: #001a69;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* For Dashboard CSS */
+
+/* Responsive for Mobile Device */
+@media only screen and (max-width: 600px) {
+  /* For Login and Registere Page CSS */
+  .left-side-content {
+    min-height: 80vh;
+    padding: 30px 30px !important;
+  }
+
+  .middel-pra {
+    font-size: 20px;
+    line-height: 137%;
+    color: rgba(255, 255, 255, 0.86);
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .bottom-image {
+    z-index: 1;
+  }
+  .login-right-side-content form {
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+  }
+  .register-right-side-content {
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+  }
+  /* For Dashboard CSS */
+}
