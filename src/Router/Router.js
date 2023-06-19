@@ -1,22 +1,44 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../Layout/Main";
+
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
-import DashBoard from "../Pages/DashBoard/DashBoard";
-import Home from "../Pages/Home/Home";
+
+import StudentProfile from "../Components/StudentProfile/StudentProfile";
+import DashboardLayout from "../Layout/DashboardLayout";
+import StudentRef from "../Components/StudeRef/StudentRef";
+import StudentMyPass from "../Components/StudMyPass/StudentMyPass";
+import Withdrawals from "../Components/WithDrawals/Withdrawals";
+import Address from "../Components/Address/Address";
+import ChangPass from "../Components/ChangPass/ChangPass";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <DashboardLayout></DashboardLayout>,
     children: [
       {
-        path: "/",
-        element: <Home></Home>,
+        path: "/profile",
+        element: <StudentProfile></StudentProfile>,
       },
       {
-        path: "/dashboard",
-        element: <DashBoard></DashBoard>,
+        path: "/reference",
+        element: <StudentRef></StudentRef>,
+      },
+      {
+        path: "/passbook",
+        element: <StudentMyPass></StudentMyPass>,
+      },
+      {
+        path: "/withdrawals",
+        element: <Withdrawals></Withdrawals>,
+      },
+      {
+        path: "/address&location",
+        element: <Address></Address>,
+      },
+      {
+        path: "changepass",
+        element: <ChangPass></ChangPass>,
       },
     ],
   },

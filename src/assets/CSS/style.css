@@ -1,3 +1,7 @@
+/* body {
+  background: #e5e7eb !important;
+} */
+
 /* For Login and Registere Page CSS */
 .left-side-content {
   background-image: url("../../assets//login_register_image//login-bg.png");
@@ -69,7 +73,12 @@ select {
   font-weight: bold;
 }
 /* For Dashboard CSS */
-
+.sc-eqUAAy.gocYik.rdt_TableHeadRow {
+  font-size: 15px;
+  font-weight: bold;
+  background: #1a74e2;
+  color: white;
+}
 /* Responsive for Mobile Device */
 @media only screen and (max-width: 600px) {
   /* For Login and Registere Page CSS */
@@ -100,4 +109,26 @@ select {
     padding: 50px 0px;
   }
   /* For Dashboard CSS */
+  .outlet_section {
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .small_layout {
+    padding-top: 10px;
+  }
+  .profile_sm_center {
+    display: grid;
+    justify-items: center;
+    grid-column: span 8 / span 3;
+  }
+  .sm_center_img {
+    grid-column: span 8 / span 3;
+  }
+
+  .profile_sm_info {
+    display: grid;
+    justify-items: center;
+  }
 }
